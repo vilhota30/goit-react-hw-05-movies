@@ -5,6 +5,7 @@ import ImgCart from 'components/ImgCart/ImgCart';
 
 export const MovieListContainer = styled.ul`
 display: grid;
+grid-template-columns: repeat(3, 1fr);
 width: 100%;
 grid-gap: 16px;
 list-style: none;
@@ -34,14 +35,15 @@ display: flex;
 justify-content: center;
 align-items: flex-start;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s box-shadow 0.3s;
+transition: transform 0.5s box-shadow 0.6s;
 overflow: hidden;
-border-radius: 8px;
+border-radius: 14px;
 
 &&:hover,
 &&:focus{
-    transform: scale(1.05);
+    transform: scale(1.07);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid black;
 }
 `;
 
@@ -52,9 +54,11 @@ object-fit: cover;
 `;
 
 export const MovieTitle = styled.h2`
+display: flex;
+justify-content: center;
 text-decoration: none;
 color: black;
-font-size: 14px;
+font-size: 16px;
 padding: 5px;
 `;
 
@@ -64,10 +68,13 @@ bottom: 0;
 left: 0;
 width: 100%;
 height: 60px;
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(34, 56, 65, 0.8);
 `;
 
 export const WrapperContent = styled.div`
 text-align: start;
 margin-top: 8px;
+background-color: darkblue;
+color: whitesmoke;
+border-radius: 15px;
 `;

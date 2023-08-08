@@ -10,7 +10,9 @@ pagging: 10px 10px;
 margin-bottom: 20px;
 margin-top: 20px;
 border-bottom: 1px solid blue;
-position: fixed;
+position: relative;
+background-color: mediumaquamarine;
+border-radius: 20px;
 `;
 
 export const Nav = styled.nav`
@@ -42,6 +44,7 @@ margin: 0 10px;
 export const List = styled.ul`
 display: flex;
 justify-content: center;
+list-style: none;
 padding: 0;
 margin-bottom: 10px;
 `;
