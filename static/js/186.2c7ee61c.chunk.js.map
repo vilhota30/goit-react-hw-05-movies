@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/186.2c7ee61c.chunk.js","mappings":"0JAOA,UAPgB,WAEZ,OACI,uBAAG,4KAEV,C","sources":["components/Reviews/Reviews.jsx"],"sourcesContent":["const Reviews = () => {\n\n    return(\n        <p>Тут має бути огляд одного фільму </p>\n    )\n}\n\nexport default Reviews;"],"names":[],"sourceRoot":""}

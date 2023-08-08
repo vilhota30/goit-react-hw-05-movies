@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/247.fd57f6f0.chunk.js","mappings":"2JAOA,UAPa,WAET,OACI,uBAAG,mRAEV,C","sources":["components/Cast/Cast.jsx"],"sourcesContent":["const Cast = () => {\n\n    return (\n        <p>Тут мають бути зображення акторів до певного фільму</p>\n    )\n}\n\nexport default Cast;"],"names":[],"sourceRoot":""}
