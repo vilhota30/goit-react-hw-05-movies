@@ -26,10 +26,10 @@ const BackToTop = () => {
 };
 
 
-return(
+return (
     <>
     {toTop && (
-        <Button
+        <button
         style={{
             position: 'fixed',
             bottom: '50px',
@@ -37,7 +37,7 @@ return(
             width: '50px',
             height: '50px',
             borderRadius: '50%',
-            background: 'blueviolet',
+            background: 'mediumaquamarine',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
@@ -45,11 +45,12 @@ return(
             color: 'white',
             fontSize: '24px',
             fontWeight: 'bold',
+            border: '3px solid darkblue'
         }}
         onClick={scrollToTop}
         >
          &#11014;
-        </Button>
+        </button>
     )}
     </>
 );

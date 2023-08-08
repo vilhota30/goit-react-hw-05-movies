@@ -4,9 +4,9 @@ import React, {lazy, Suspense} from 'react';
 import Navigation from 'components/Navigation/Navigation';
 import Loader from 'components/Loader/Loader';
  
-const Home = lazy(() => import('pages/Home'));
-const Movies = lazy(() => import('pages/Movies'));
-const MovieDetails = lazy(() => import('pages/MovieDetails'));
+const Home = lazy(() => import('components/Pages/Home'));
+const Movies = lazy(() => import('components/Pages/Movies/Movies'));
+const MovieDetails = lazy(() => import('components/Pages/MovieDetails/MovieDetails'));
 const Cast = lazy(() => import('../Cast/Cast'));
 const Reviews = lazy(() => import('../Reviews/Reviews'));
 

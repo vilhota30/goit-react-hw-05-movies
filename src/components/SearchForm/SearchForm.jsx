@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {Button, FormContainer, Input, Span} from './SearchForm.styled';
 
 const SearchForm = () => {
-    const [searchValue, serSearchValue] = useState('');
+    const [searchValue, setSearchValue] = useState('');
     const [, setSearchParams] = useSearchParams();
 
     const handleSubmit = event => {
@@ -17,13 +17,12 @@ const SearchForm = () => {
 
     
     const handleChange = event => {
-        setSearchParams(event.target.value);
+        setSearchValue(event.target.value);
     }
 
 
-
     return (
-        <FormContainer>
+        <FormContainer onSubmit={handleSubmit}>
             <Input
                type='text'
                name='serach'

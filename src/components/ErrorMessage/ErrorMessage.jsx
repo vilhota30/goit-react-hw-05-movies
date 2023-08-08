@@ -33,7 +33,7 @@ const ErrorMessage = ({error}) => {
     );
 }
 
-ErrorMessage.PropTypes = {
+ErrorMessage.propTypes = {
     error: PropTypes.string.isRequired,
 };
 
