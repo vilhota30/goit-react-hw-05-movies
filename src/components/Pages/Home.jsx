@@ -34,7 +34,7 @@ const Home = () => {
 
     return(
         <div>
-            <h1>Trending today</h1>
+            <h1 style={{display: 'flex', justifyContent: 'center', color: 'darkblue'}}>Trending today</h1>
             {error !== null && <ErrorMessage error={error}/>}
             {movies.length > 0 && <MovieList movies={movies}/>}
         </div>

@@ -37,7 +37,7 @@ return (
             width: '50px',
             height: '50px',
             borderRadius: '50%',
-            background: 'mediumaquamarine',
+            background: 'blue',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',

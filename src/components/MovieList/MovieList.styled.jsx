@@ -68,7 +68,7 @@ bottom: 0;
 left: 0;
 width: 100%;
 height: 60px;
-background-color: rgba(34, 56, 65, 0.8);
+background-color: rgb(100, 149, 237, 0.8);
 `;
 
 export const WrapperContent = styled.div`
