@@ -26,7 +26,7 @@ const MovieList = ({movies}) => {
         <>
         <MovieListContainer>
             {movies.map(movie => (
-                <CustomLink state={{from: location}} key={movie.Id} to={`/movies/${movie.Id}`}>
+                <CustomLink state={{from: location}} key={movie.id} to={`/movies/${movie.id}`}>
                     <MovieItem>
                         <Wrapper>
                             <MovieImage img={movie.poster_path} alt={movie.title}/>

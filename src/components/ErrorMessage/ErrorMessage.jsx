@@ -8,11 +8,10 @@ const ErrorMessage = ({error}) => {
     const showErrorToast = () => {
         toast.error(
             <>
-            Oops, something went wrong ... 
+            Make yourself a cup of tea
             <br/>
-            Plase, try agan later.
+            We're already fixing this bug
             <br/>
-            Error: {error}
             </>,{
                 position: toast.POSITION.TOP_CENTER,
                 autoClose: 2500,
@@ -28,7 +27,7 @@ const ErrorMessage = ({error}) => {
     return(
         <Container>
             <Title>Sorry, but something went wrong...</Title>
-            <Button onClick={showErrorToast}>Show Error Toast</Button>
+            <Button onClick={showErrorToast} to='/'>Click me to find addition information about the error</Button>
         </Container>
     );
 }

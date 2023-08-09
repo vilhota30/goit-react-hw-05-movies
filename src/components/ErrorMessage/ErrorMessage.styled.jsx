@@ -13,14 +13,15 @@ margin-bottom: 16px;
 
 export const Button = styled.button`
 padding: 8px 14px;
-color: blue;
-background-color: green;
+color: white;
+background-color: darkblue;
 border-radius: 4px;
 font-size: 16px;
 cursor: pointer;
 &&:hover,
 &&:focus{
-    background-color: blue;
-    color: green;
+    background-color: white;
+    color: darkblue;
+    border: 2px solid black;
 }
 `;
