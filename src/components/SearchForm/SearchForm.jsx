@@ -2,10 +2,13 @@ import React, {useState} from 'react';
 import { useSearchParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {Button, FormContainer, Input, Span} from './SearchForm.styled';
+import Confetti from 'components/Confetti/Confetti';
 
 const SearchForm = () => {
+
     const [searchValue, setSearchValue] = useState('');
     const [, setSearchParams] = useSearchParams();
+    
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -13,6 +16,7 @@ const SearchForm = () => {
         if (searchValue.trim().length > 2) {
             setSearchParams({query: searchValue});
         }
+
     };
 
     
@@ -22,6 +26,8 @@ const SearchForm = () => {
 
 
     return (
+        <>
+         <Confetti/> 
         <FormContainer onSubmit={handleSubmit}>
             <Input
                type='text'
@@ -34,6 +40,7 @@ const SearchForm = () => {
             />
             <Button type='submit'><Span>&#128269;</Span></Button>
         </FormContainer>
+        </>
     );
 };
 
